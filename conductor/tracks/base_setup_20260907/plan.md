@@ -64,4 +64,4 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
     - [x] Implementar componente de formulario de inicio de sesión estilizado para Web
     - [x] Implementar `ProtectedRoute` que restrinja acceso según rol (`admin`, `recepcion`, `terapeuta`, `medico`)
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 4: Configuración Firebase Modular y Autenticación con Roles (RBAC)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 4: Configuración Firebase Modular y Autenticación con Roles (RBAC)' (Protocol in workflow.md)

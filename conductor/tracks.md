@@ -5,7 +5,7 @@ This file tracks all major tracks for the project. Each track corresponds to a f
 ---
 
 ### Fase Fundacional y Core:
-- [ ] **Track 1: Setup del Workspace Multi-plataforma, Tipos Compartidos y Autenticación con Firebase RBAC**
+- [x] **Track 1: Setup del Workspace Multi-plataforma, Tipos Compartidos y Autenticación con Firebase RBAC**
   *Link: [./tracks/base_setup_20260907/](./tracks/base_setup_20260907/)*
   *Módulo Asociado: [user-stories.md#módulo-1-autenticación-seguridad-y-roles-rbac](./user-stories.md#módulo-1-autenticación-seguridad-y-roles-rbac)*
 
