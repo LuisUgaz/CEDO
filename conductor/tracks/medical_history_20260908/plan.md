@@ -22,10 +22,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo
 
-- [ ] Task: Selector de Paciente en Espera y Cabecera de Ficha Médica
-    - [ ] Escribir pruebas unitarias para `SelectorPacienteHistoria.tsx` (lista de espera, búsqueda por DNI/nombre y visualización consolidada)
-    - [ ] Implementar componente `SelectorPacienteHistoria.tsx` con pacientes derivados de triage y ficha consolidada de datos personales
-    - [ ] Permitir selección reactiva de paciente para apertura de historia clínica
+- [x] Task: Selector de Paciente en Espera y Cabecera de Ficha Médica f0d26d5
+    - [x] Escribir pruebas unitarias para `SelectorPacienteHistoria.tsx` (lista de espera, búsqueda por DNI/nombre y visualización consolidada)
+    - [x] Implementar componente `SelectorPacienteHistoria.tsx` con pacientes derivados de triage y ficha consolidada de datos personales
+    - [x] Permitir selección reactiva de paciente para apertura de historia clínica
 
 - [ ] Task: Componente `FormularioHistoriaClinica.tsx` con Campos Dinámicos y Debounce
     - [ ] Escribir pruebas unitarias para `FormularioHistoriaClinica.tsx` (campos base, adición/eliminación de campos dinámicos, debounce de autoguardado)
