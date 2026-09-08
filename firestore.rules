@@ -52,6 +52,15 @@ service cloud.firestore {
       }
     }
 
+    // Colección: Historias Clínicas e Informes Médicos (A4 Vertical)
+    match /historias_clinicas/{historiaId} {
+      // Todo el personal clínico autorizado puede consultar las historias
+      allow read: if isClinicalStaff();
+      // Médicos y administradores pueden crear y actualizar evaluaciones médicas
+      allow create, update: if isAdmin() || isMedico();
+      allow delete: if isAdmin();
+    }
+
     // Colección: Citas y Agenda Semanal (particionada por semanaId)
     match /citas_agenda/{semanaId} {
       allow read: if isClinicalStaff();
