@@ -6,10 +6,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones
 
-- [ ] Task: Esquemas Zod y Tipos de Historia Clínica en `@cedo/shared`
-    - [ ] Escribir pruebas unitarias en `clinical-history.schema.test.ts` para validación de historia clínica y campos dinámicos
-    - [ ] Implementar tipos TypeScript y esquemas Zod `ClinicalHistorySchema` y `CustomClinicalFieldSchema`
-    - [ ] Exportar nuevos esquemas y tipos en `packages/shared/src/index.ts` y validar build
+- [x] Task: Esquemas Zod y Tipos de Historia Clínica en `@cedo/shared` e2e4668
+    - [x] Escribir pruebas unitarias en `clinical-history.schema.test.ts` para validación de historia clínica y campos dinámicos
+    - [x] Implementar tipos TypeScript y esquemas Zod `ClinicalHistorySchema` y `CustomClinicalFieldSchema`
+    - [x] Exportar nuevos esquemas y tipos en `packages/shared/src/index.ts` y validar build
 
 - [ ] Task: Servicio Firestore `historiaClinica.service.ts` y Reglas de Seguridad
     - [ ] Escribir pruebas unitarias con mocks para el servicio en `historiaClinica.service.test.ts`
