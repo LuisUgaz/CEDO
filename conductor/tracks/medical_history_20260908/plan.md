@@ -39,10 +39,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 3: Formato de Impresión A4 Vertical e Integración en App Web
 
-- [ ] Task: Plantilla de Impresión Institucional A4 Vertical (`ImpresionHistoriaA4.tsx`)
-    - [ ] Escribir pruebas unitarias para la plantilla de impresión A4 institucional y membrete oficial
-    - [ ] Implementar componente `ImpresionHistoriaA4.tsx` con membrete formal de CEDO-REHAB EIRL, datos clínicos tabulados, campos dinámicos y pie institucional con zona de firma y sello
-    - [ ] Configurar y verificar clases de impresión `@media print` (`.print-a4-vertical`, ocultamiento de sidebars y navegación)
+- [x] Task: Plantilla de Impresión Institucional A4 Vertical (`ImpresionHistoriaA4.tsx`) 72643b2
+    - [x] Escribir pruebas unitarias para la plantilla de impresión A4 institucional y membrete oficial
+    - [x] Implementar componente `ImpresionHistoriaA4.tsx` con membrete formal de CEDO-REHAB EIRL, datos clínicos tabulados, campos dinámicos y pie institucional con zona de firma y sello
+    - [x] Configurar y verificar clases de impresión `@media print` (`.print-a4-vertical`, ocultamiento de sidebars y navegación)
 
 - [ ] Task: Módulo Unificado `ModuloHistoriaClinica.tsx` e Integración en `App.tsx`
     - [ ] Escribir pruebas unitarias para `ModuloHistoriaClinica.tsx` y su integración en `App.tsx`
