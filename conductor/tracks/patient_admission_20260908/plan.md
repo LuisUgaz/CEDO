@@ -6,10 +6,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 1: Esquemas de Admisión y Servicio Firestore de Pacientes
 
-- [ ] Task: Ampliación de Esquemas de Admisión y Servicio de Pacientes
-    - [ ] Escribir pruebas unitarias con mocks para el servicio `pacientes.service.ts`
-    - [ ] Actualizar esquema Zod en `@cedo/shared` con tipos de consulta y estado de triage
-    - [ ] Implementar `pacientes.service.ts` con métodos `crearPaciente`, `obtenerPacientesEnEspera` y `actualizarEstadoTriage`
+- [x] Task: Ampliación de Esquemas de Admisión y Servicio de Pacientes 79bcc5e
+    - [x] Escribir pruebas unitarias con mocks para el servicio `pacientes.service.ts`
+    - [x] Actualizar esquema Zod en `@cedo/shared` con tipos de consulta y estado de triage
+    - [x] Implementar `pacientes.service.ts` con métodos `crearPaciente`, `obtenerPacientesEnEspera` y `actualizarEstadoTriage`
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Admisión y Servicio Firestore de Pacientes' (Protocol in workflow.md)
 
