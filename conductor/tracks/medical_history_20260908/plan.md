@@ -44,10 +44,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar componente `ImpresionHistoriaA4.tsx` con membrete formal de CEDO-REHAB EIRL, datos clínicos tabulados, campos dinámicos y pie institucional con zona de firma y sello
     - [x] Configurar y verificar clases de impresión `@media print` (`.print-a4-vertical`, ocultamiento de sidebars y navegación)
 
-- [ ] Task: Módulo Unificado `ModuloHistoriaClinica.tsx` e Integración en `App.tsx`
-    - [ ] Escribir pruebas unitarias para `ModuloHistoriaClinica.tsx` y su integración en `App.tsx`
-    - [ ] Implementar vista unificada `ModuloHistoriaClinica.tsx` que integre el selector, formulario reactivo y modal de impresión
-    - [ ] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Historia Clínica General (Informe A4)"
-    - [ ] Vincular la acción "Evaluar" de `ColaTriage.tsx` para abrir directamente la historia clínica del paciente seleccionado
+- [x] Task: Módulo Unificado `ModuloHistoriaClinica.tsx` e Integración en `App.tsx` e8e184b
+    - [x] Escribir pruebas unitarias para `ModuloHistoriaClinica.tsx` y su integración en `App.tsx`
+    - [x] Implementar vista unificada `ModuloHistoriaClinica.tsx` que integre el selector, formulario reactivo y modal de impresión
+    - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Historia Clínica General (Informe A4)"
+    - [x] Vincular la acción "Evaluar" de `ColaTriage.tsx` para abrir directamente la historia clínica del paciente seleccionado
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 3: Formato de Impresión A4 Vertical e Integración en App Web' (Protocol in workflow.md)
