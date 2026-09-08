@@ -27,11 +27,11 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar componente `SelectorPacienteHistoria.tsx` con pacientes derivados de triage y ficha consolidada de datos personales
     - [x] Permitir selección reactiva de paciente para apertura de historia clínica
 
-- [ ] Task: Componente `FormularioHistoriaClinica.tsx` con Campos Dinámicos y Debounce
-    - [ ] Escribir pruebas unitarias para `FormularioHistoriaClinica.tsx` (campos base, adición/eliminación de campos dinámicos, debounce de autoguardado)
-    - [ ] Implementar formulario médico estructurado con campos base (Motivo, Antecedentes, Examen Físico, DX, Plan)
-    - [ ] Implementar funcionalidad interactiva "+ Agregar Campo" para insertar parámetros de evaluación ad-hoc en caliente
-    - [ ] Integrar autoguardado reactivo (debounce 500ms) con feedback visual (*"Guardando..."*, *"Sincronizado"*) y botón "Completar Evaluación"
+- [x] Task: Componente `FormularioHistoriaClinica.tsx` con Campos Dinámicos y Debounce 63dcd1f
+    - [x] Escribir pruebas unitarias para `FormularioHistoriaClinica.tsx` (campos base, adición/eliminación de campos dinámicos, debounce de autoguardado)
+    - [x] Implementar formulario médico estructurado con campos base (Motivo, Antecedentes, Examen Físico, DX, Plan)
+    - [x] Implementar funcionalidad interactiva "+ Agregar Campo" para insertar parámetros de evaluación ad-hoc en caliente
+    - [x] Integrar autoguardado reactivo (debounce 500ms) con feedback visual (*"Guardando..."*, *"Sincronizado"*) y botón "Completar Evaluación"
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo' (Protocol in workflow.md)
 
