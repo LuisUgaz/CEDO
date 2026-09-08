@@ -38,15 +38,16 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
 
 ---
 
-## Fase 3: Inicialización de la Aplicación Móvil (React Native + Expo)
+## Fase 3: Unificación de la Experiencia Móvil a Web Responsiva (PWA para Terapeutas)
 
-- [x] 3ba0099 Task: Scaffolding de la Aplicación Móvil en `apps/mobile`
-    - [x] Escribir pruebas de configuración y smoke test del punto de entrada de la app móvil
-    - [x] Inicializar proyecto React Native con Expo Router y TypeScript en `apps/mobile`
-    - [x] Configurar NativeWind (Tailwind CSS para móvil) con la paleta clínica
-    - [x] Configurar navegación por pestañas (Tabs) para Terapeutas (Turnos de Hoy, Mis Pacientes, Asistencia Rápida)
+- [x] 3ba0099 Task: Integración de la Vista Móvil / PWA de Fisioterapeutas en `apps/web` (ADR-001)
+    - [x] Registrar ADR-001 en `tech-stack.md` para unificar la plataforma a Web Responsiva / PWA
+    - [x] Diseñar e implementar `VistaTerapeuta` con navegación por pestañas adaptativas (Turnos de Hoy, Mis Pacientes, Asistencia a Pie de Camilla)
+    - [x] Conectar la experiencia móvil en `App.tsx` bajo el módulo de Ficha de Tratamiento
+    - [x] Escribir pruebas unitarias con Vitest y Testing Library alcanzando >80% de cobertura
+    - [x] Retirar subproyecto nativo `apps/mobile` y limpiar dependencias del monorepo
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 3: Inicialización de la Aplicación Móvil (React Native + Expo)' (Protocol in workflow.md)
+- [ ] Task: Conductor - User Manual Verification 'Fase 3: Unificación de la Experiencia Móvil a Web Responsiva (PWA para Terapeutas)' (Protocol in workflow.md)
 
 ---
 

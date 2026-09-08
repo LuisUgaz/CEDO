@@ -159,20 +159,20 @@ Característica: Control de Asistencia, Boletas y Liquidación de Paquetes
 
 ---
 
-## Módulo 7: Aplicación Móvil para Fisioterapeutas (React Native + Expo)
+## Módulo 7: Módulo Web Móvil / PWA para Fisioterapeutas a Pie de Camilla
 
 ### Historia 7.1: Consulta a Pie de Camilla y Marcado Rápido de Sesión
-* **Como** Fisioterapeuta en la sala de rehabilitación con la app móvil.
-* **Quiero** ver mi lista de pacientes del día y marcar la asistencia en camilla.
+* **Como** Fisioterapeuta en la sala de rehabilitación desde un dispositivo móvil o tablet (PWA).
+* **Quiero** ver mi lista de pacientes del día y marcar la asistencia directamente en camilla.
 * **Para** no desplazarme hasta recepción y asegurar trazabilidad médica inmediata.
 
 ```gherkin
-Característica: App Móvil de Fisioterapia
+Característica: Módulo Web Móvil / PWA de Fisioterapia
   Escenario: Visualización de pacientes del turno y prescripción en sala
-    Dado que el terapeuta inicia sesión en la aplicación móvil con NativeWind
-    Cuando abre la pestaña "Mis Pacientes de Hoy"
+    Dado que el terapeuta inicia sesión en la aplicación web responsiva (PWA)
+    Cuando abre la vista móvil "Mis Pacientes de Hoy"
     Entonces observa la tarjeta de cada paciente con su diagnóstico y agentes físicos prescritos
-    Y al tocar sobre "Marcar Asistencia", la sesión se actualiza instantáneamente en la web de recepción.
+    Y al tocar sobre "Marcar Asistencia", la sesión se actualiza instantáneamente en la base de datos clínica.
 ```
 
 ---

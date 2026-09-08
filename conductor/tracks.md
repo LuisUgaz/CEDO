@@ -30,8 +30,8 @@ This file tracks all major tracks for the project. Each track corresponds to a f
 - [ ] **Track 6: Control de Asistencia, Paquetes de Sesiones y Cobranza de Boletas**
   *Módulo Asociado: [user-stories.md#módulo-6-control-de-asistencia-paquetes-de-sesiones-y-boletas](./user-stories.md#módulo-6-control-de-asistencia-paquetes-de-sesiones-y-boletas)*
 
-- [ ] **Track 7: Aplicación Móvil para Fisioterapeutas (React Native + Expo + NativeWind)**
-  *Módulo Asociado: [user-stories.md#módulo-7-aplicación-móvil-para-fisioterapeutas-react-native--expo](./user-stories.md#módulo-7-aplicación-móvil-para-fisioterapeutas-react-native--expo)*
+- [ ] **Track 7: Módulo Web Móvil / PWA para Fisioterapeutas a Pie de Camilla**
+  *Módulo Asociado: [user-stories.md#módulo-7-módulo-web-móvil--pwa-para-fisioterapeutas-a-pie-de-camilla](./user-stories.md#módulo-7-módulo-web-móvil--pwa-para-fisioterapeutas-a-pie-de-camilla)*
 
 ---
 
