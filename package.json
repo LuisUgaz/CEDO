@@ -22,5 +22,8 @@
     "firestore"
   ],
   "author": "CEDO-REHAB EIRL",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.9"
+  }
 }
