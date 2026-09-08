@@ -58,10 +58,10 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
     - [x] Implementar módulo de inicialización de Firebase con persistencia offline habilitada (IndexedDB)
     - [x] Crear archivo `firestore.rules` con estructura básica de seguridad basada en tokens y roles
 
-- [~] Task: Sistema de Autenticación y Guards de Navegación por Roles
-    - [ ] Escribir pruebas unitarias para `AuthContext`, hook `useAuth` y protección de rutas
-    - [ ] Implementar `AuthContext` con soporte de login, logout y extracción de Custom Claims (`role`)
-    - [ ] Implementar componente de formulario de inicio de sesión estilizado para Web
-    - [ ] Implementar `ProtectedRoute` que restrinja acceso según rol (`admin`, `recepcion`, `terapeuta`, `medico`)
+- [x] db3e5a1 Task: Sistema de Autenticación y Guards de Navegación por Roles
+    - [x] Escribir pruebas unitarias para `AuthContext`, hook `useAuth` y protección de rutas
+    - [x] Implementar `AuthContext` con soporte de login, logout y extracción de Custom Claims (`role`)
+    - [x] Implementar componente de formulario de inicio de sesión estilizado para Web
+    - [x] Implementar `ProtectedRoute` que restrinja acceso según rol (`admin`, `recepcion`, `terapeuta`, `medico`)
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 4: Configuración Firebase Modular y Autenticación con Roles (RBAC)' (Protocol in workflow.md)
