@@ -11,7 +11,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Actualizar esquema Zod en `@cedo/shared` con tipos de consulta y estado de triage
     - [x] Implementar `pacientes.service.ts` con métodos `crearPaciente`, `obtenerPacientesEnEspera` y `actualizarEstadoTriage`
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Admisión y Servicio Firestore de Pacientes' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Admisión y Servicio Firestore de Pacientes' (Protocol in workflow.md)
 
 ---
 
