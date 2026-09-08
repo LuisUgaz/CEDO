@@ -11,10 +11,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar tipos TypeScript y esquemas Zod `ClinicalHistorySchema` y `CustomClinicalFieldSchema`
     - [x] Exportar nuevos esquemas y tipos en `packages/shared/src/index.ts` y validar build
 
-- [ ] Task: Servicio Firestore `historiaClinica.service.ts` y Reglas de Seguridad
-    - [ ] Escribir pruebas unitarias con mocks para el servicio en `historiaClinica.service.test.ts`
-    - [ ] Implementar métodos `guardarHistoriaClinica`, `obtenerHistoriaClinicaPorPaciente`, `suscribirHistoriaClinica` y `finalizarEvaluacionMedica`
-    - [ ] Actualizar reglas de seguridad en `firestore.rules` para la colección `historias_clinicas`
+- [x] Task: Servicio Firestore `historiaClinica.service.ts` y Reglas de Seguridad 12eb44b
+    - [x] Escribir pruebas unitarias con mocks para el servicio en `historiaClinica.service.test.ts`
+    - [x] Implementar métodos `guardarHistoriaClinica`, `obtenerHistoriaClinicaPorPaciente`, `suscribirHistoriaClinica` y `finalizarEvaluacionMedica`
+    - [x] Actualizar reglas de seguridad en `firestore.rules` para la colección `historias_clinicas`
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones' (Protocol in workflow.md)
 
