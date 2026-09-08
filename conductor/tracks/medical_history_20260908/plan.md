@@ -20,7 +20,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ---
 
-## Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo
+## Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo [checkpoint: c2444d9]
 
 - [x] Task: Selector de Paciente en Espera y Cabecera de Ficha Médica f0d26d5
     - [x] Escribir pruebas unitarias para `SelectorPacienteHistoria.tsx` (lista de espera, búsqueda por DNI/nombre y visualización consolidada)
@@ -33,7 +33,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar funcionalidad interactiva "+ Agregar Campo" para insertar parámetros de evaluación ad-hoc en caliente
     - [x] Integrar autoguardado reactivo (debounce 500ms) con feedback visual (*"Guardando..."*, *"Sincronizado"*) y botón "Completar Evaluación"
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Evaluación Médica Dinámica y Autoguardado Reactivo' (Protocol in workflow.md) c2444d9
 
 ---
 
