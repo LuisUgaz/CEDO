@@ -24,6 +24,7 @@
   "author": "CEDO-REHAB EIRL",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
     "@vitest/coverage-v8": "^2.1.9"
   }
 }
