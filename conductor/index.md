@@ -4,6 +4,7 @@
 - [Product Definition](./product.md)
 - [Product Guidelines](./product-guidelines.md)
 - [Technology Stack](./tech-stack.md)
+- [User Stories (Gherkin)](./user-stories.md)
 
 ## Workflow
 - [Workflow](./workflow.md)

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased selection:bg-emerald-500 selection:text-white;
+  }
+}
+
+/* Estilos de Impresión Clínica */
+@media print {
+  body {
+    background: white !important;
+    font-size: 9pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  aside,
+  header,
+  nav,
+  button,
+  .modal-backdrop {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Formato A4 Vertical */
+  .print-a4-vertical {
+    width: 210mm !important;
+    min-height: 297mm !important;
+    padding: 10mm !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Formato A6 Tarjetón */
+  .print-a6-tarjeton {
+    width: 148mm !important;
+    height: 105mm !important;
+    padding: 5mm !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+}

@@ -6,16 +6,16 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
 
 ## Fase 1: Andamiaje del Monorepo y Modelos Clínicos Compartidos
 
-- [ ] Task: Configuración del Workspace y Herramientas Base
-    - [ ] Escribir pruebas de validación de estructura de workspace y scripts en `package.json`
-    - [ ] Crear el `package.json` raíz con workspaces para `apps/web`, `apps/mobile` y `packages/shared`
-    - [ ] Configurar `tsconfig.base.json`, `.editorconfig` y `.gitignore`
+- [x] Task: Configuración del Workspace y Herramientas Base
+    - [x] Escribir pruebas de validación de estructura de workspace y scripts en `package.json`
+    - [x] Crear el `package.json` raíz con workspaces para `apps/web`, `apps/mobile` y `packages/shared`
+    - [x] Configurar `tsconfig.base.json`, `.editorconfig` y `.gitignore`
 
-- [ ] Task: Definición de Modelos Clínicos y Esquemas Zod en `packages/shared`
-    - [ ] Escribir pruebas unitarias con Vitest/Jest para esquemas Zod (validación de DNI, edad menor con apoderado, paquetes y citas)
-    - [ ] Implementar tipos TypeScript y esquemas Zod para Pacientes, Historias Clínicas y Fichas de Tratamiento
-    - [ ] Implementar tipos TypeScript y esquemas Zod para Agenda, Finanzas, Inventario y Roles de Usuario
-    - [ ] Configurar build y exportación de `packages/shared`
+- [x] Task: Definición de Modelos Clínicos y Esquemas Zod en `packages/shared`
+    - [x] Escribir pruebas unitarias con Vitest/Jest para esquemas Zod (validación de DNI, edad menor con apoderado, paquetes y citas)
+    - [x] Implementar tipos TypeScript y esquemas Zod para Pacientes, Historias Clínicas y Fichas de Tratamiento
+    - [x] Implementar tipos TypeScript y esquemas Zod para Agenda, Finanzas, Inventario y Roles de Usuario
+    - [x] Configurar build y exportación de `packages/shared`
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 1: Andamiaje del Monorepo y Modelos Clínicos Compartidos' (Protocol in workflow.md)
 
@@ -23,16 +23,16 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
 
 ## Fase 2: Inicialización de la Aplicación Web (React + Vite + Tailwind)
 
-- [ ] Task: Scaffolding de la Aplicación Web en `apps/web`
-    - [ ] Escribir pruebas de renderizado inicial y configuración de entorno para la app web
-    - [ ] Inicializar proyecto React 19 + TypeScript con Vite en `apps/web`
-    - [ ] Configurar Tailwind CSS v3/v4 con la paleta de colores institucional de CEDO-REHAB (`color-melon`, `color-verde`, etc.)
-    - [ ] Configurar Lucide React y vincular dependencia local a `@cedo/shared`
+- [x] Task: Scaffolding de la Aplicación Web en `apps/web`
+    - [x] Escribir pruebas de renderizado inicial y configuración de entorno para la app web
+    - [x] Inicializar proyecto React + TypeScript con Vite en `apps/web`
+    - [x] Configurar Tailwind CSS con la paleta de colores institucional de CEDO-REHAB (`clinica.melon`, `clinica.verde`, etc.)
+    - [x] Configurar Lucide React y vincular dependencia local a `@cedo/shared`
 
-- [ ] Task: Maqueta Base y Layout Clínico Web
-    - [ ] Escribir pruebas para el componente de Sidebar y Header responsivo
-    - [ ] Implementar Sidebar de navegación con los 7 módulos clínicos (Agenda, Registro, Historias, Terapias, Asistencia, Inventario, Finanzas)
-    - [ ] Implementar indicador de estado de conexión Firebase (Online/Offline) en el header
+- [x] Task: Maqueta Base y Layout Clínico Web
+    - [x] Escribir pruebas para el componente de Sidebar y Header responsivo
+    - [x] Implementar Sidebar de navegación con los 8 módulos clínicos (Agenda, Registro, Historias, Terapias, Asistencia, Inventario, Rencuentro, Finanzas)
+    - [x] Implementar indicador de estado de conexión Firebase (Online/Offline) en el header
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 2: Inicialización de la Aplicación Web (React + Vite + Tailwind)' (Protocol in workflow.md)
 
