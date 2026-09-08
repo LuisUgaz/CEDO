@@ -29,4 +29,15 @@ describe('App Component', () => {
     expect(screen.getByRole('button', { name: /Fichas en Espera/i })).toBeDefined();
     expect(screen.getByLabelText(/Nombre Completo/i)).toBeDefined();
   });
+
+  it('debe navegar al módulo de Historia Clínica General y renderizar ModuloHistoriaClinica', () => {
+    render(<App />);
+
+    const btnHistorias = screen.getByText('Historia Clínica (A4)');
+    fireEvent.click(btnHistorias);
+
+    expect(screen.getAllByText('Historia Clínica General (Informe A4)').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText('Pacientes en Sala de Espera (Triage)')).toBeDefined();
+    expect(screen.getByPlaceholderText(/Buscar por nombre o DNI/i)).toBeDefined();
+  });
 });

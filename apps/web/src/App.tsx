@@ -12,6 +12,8 @@ import {
 
 import { VistaTerapeuta } from './components/terapia/VistaTerapeuta';
 import ModuloAdmision from './components/admision/ModuloAdmision';
+import { ModuloHistoriaClinica } from './components/historia/ModuloHistoriaClinica';
+import type { Patient } from '@cedo/shared';
 
 const TITULOS_MODULOS: Record<ModuloId, string> = {
   agenda: 'Horario y Agenda Semanal',
@@ -26,6 +28,12 @@ const TITULOS_MODULOS: Record<ModuloId, string> = {
 
 export const App: React.FC = () => {
   const [moduloActivo, setModuloActivo] = useState<ModuloId>('agenda');
+  const [pacienteEnEvaluacion, setPacienteEnEvaluacion] = useState<Patient | null>(null);
+
+  const handleDerivarAEvaluacion = (paciente: Patient) => {
+    setPacienteEnEvaluacion(paciente);
+    setModuloActivo('historias');
+  };
 
   return (
     <Layout
@@ -34,7 +42,9 @@ export const App: React.FC = () => {
       tituloModulo={TITULOS_MODULOS[moduloActivo]}
     >
       {moduloActivo === 'registro' ? (
-        <ModuloAdmision />
+        <ModuloAdmision onDerivarAEvaluacion={handleDerivarAEvaluacion} />
+      ) : moduloActivo === 'historias' ? (
+        <ModuloHistoriaClinica pacienteInicial={pacienteEnEvaluacion} />
       ) : moduloActivo === 'terapias' ? (
         <VistaTerapeuta />
       ) : (

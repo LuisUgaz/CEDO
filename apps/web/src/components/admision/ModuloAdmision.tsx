@@ -3,10 +3,15 @@ import { UserPlus, Users, Stethoscope } from 'lucide-react';
 import FormularioAdmision from './FormularioAdmision';
 import ColaTriage from './ColaTriage';
 import { suscribirPacientesEnEspera } from '../../services/pacientes.service';
+import type { Patient } from '@cedo/shared';
 
 type TabAdmision = 'registro' | 'espera';
 
-export default function ModuloAdmision() {
+interface ModuloAdmisionProps {
+  onDerivarAEvaluacion?: (paciente: Patient) => void;
+}
+
+export default function ModuloAdmision({ onDerivarAEvaluacion }: ModuloAdmisionProps = {}) {
   const [tabActiva, setTabActiva] = useState<TabAdmision>('registro');
   const [totalEnEspera, setTotalEnEspera] = useState(0);
 
@@ -72,7 +77,7 @@ export default function ModuloAdmision() {
       {tabActiva === 'registro' ? (
         <FormularioAdmision onPacienteCreado={() => setTabActiva('espera')} />
       ) : (
-        <ColaTriage />
+        <ColaTriage onSeleccionarPaciente={onDerivarAEvaluacion} />
       )}
     </div>
   );
