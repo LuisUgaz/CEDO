@@ -47,7 +47,7 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
     - [x] Escribir pruebas unitarias con Vitest y Testing Library alcanzando >80% de cobertura
     - [x] Retirar subproyecto nativo `apps/mobile` y limpiar dependencias del monorepo
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 3: Unificación de la Experiencia Móvil a Web Responsiva (PWA para Terapeutas)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 3: Unificación de la Experiencia Móvil a Web Responsiva (PWA para Terapeutas)' (Protocol in workflow.md)
 
 ---
 
