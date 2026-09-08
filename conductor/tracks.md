@@ -16,7 +16,8 @@ This file tracks all major tracks for the project. Each track corresponds to a f
   *Link: [./tracks/patient_admission_20260908/](./tracks/patient_admission_20260908/)*
   *Módulo Asociado: [user-stories.md#módulo-2-admisión-registro-y-triage-de-pacientes](./user-stories.md#módulo-2-admisión-registro-y-triage-de-pacientes)*
 
-- [ ] **Track 3: Historia Clínica y Evaluación Médica Dinámica (Formato A4 Vertical)**
+- [~] **Track 3: Historia Clínica y Evaluación Médica Dinámica (Formato A4 Vertical)**
+  *Link: [./tracks/medical_history_20260908/](./tracks/medical_history_20260908/)*
   *Módulo Asociado: [user-stories.md#módulo-3-historia-clínica-y-evaluación-médica-a4-vertical](./user-stories.md#módulo-3-historia-clínica-y-evaluación-médica-a4-vertical)*
 
 - [ ] **Track 4: Prescripción Terapéutica y Tarjetón de Tratamiento (Formato A6 / A5 / A4)**
