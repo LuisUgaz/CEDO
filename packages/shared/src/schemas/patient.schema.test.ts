@@ -91,4 +91,51 @@ describe('PatientSchema (Validación de Reglas Clínicas de Pacientes)', () => {
     const resultado = PatientSchema.safeParse(pacienteDniInvalido);
     expect(resultado.success).toBe(false);
   });
+
+  it('debe rechazar a un menor de 18 años si tiene DNI de apoderado pero falta el nombre del apoderado', () => {
+    const menorSinNombreApoderado = {
+      nombre: 'Mateo Quispe',
+      edad: 8,
+      dni: '85296374',
+      celular: '965874123',
+      fechaIngreso: '2026-09-08',
+      dniApoderado: '10258963',
+      nombreApoderado: '',
+      tipoConsulta: 'PRE_CONSULTA' as const,
+      costoConsulta: 50,
+      color: 'color-melon' as const,
+      costoTerapia: 35,
+      paqueteActivo: 1
+    };
+
+    const resultado = PatientSchema.safeParse(menorSinNombreApoderado);
+    expect(resultado.success).toBe(false);
+    if (!resultado.success) {
+      expect(resultado.error.issues.some(i => i.path.includes('nombreApoderado'))).toBe(true);
+    }
+  });
+
+  it('debe aceptar los nuevos tipos de consulta médica y fisioterapéutica', () => {
+    const pacienteConConsulta = {
+      nombre: 'Lucia Ramirez',
+      edad: 28,
+      dni: '74125896',
+      celular: '998877665',
+      fechaIngreso: '2026-09-08',
+      tipoConsulta: 'EVALUACION_FISIOTERAPEUTICA' as const,
+      costoConsulta: 50,
+      estadoTriage: 'en_espera' as const,
+      color: 'color-verde' as const,
+      costoTerapia: 35,
+      paqueteActivo: 1
+    };
+
+    const resultado = PatientSchema.safeParse(pacienteConConsulta);
+    expect(resultado.success).toBe(true);
+    if (resultado.success) {
+      expect(resultado.data.tipoConsulta).toBe('EVALUACION_FISIOTERAPEUTICA');
+      expect(resultado.data.estadoTriage).toBe('en_espera');
+    }
+  });
 });
+

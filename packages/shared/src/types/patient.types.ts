@@ -6,7 +6,16 @@ export type PatientColor =
   | 'color-azul'     // Masajes / Descontracturantes
   | 'color-anaranjado'; // Doctor / Consulta
 
-export type ConsultationType = 'pre-consulta' | 'post-consulta' | 'no';
+export type ConsultationType =
+  | 'PRE_CONSULTA'
+  | 'CONSULTA_MEDICA'
+  | 'EVALUACION_FISIOTERAPEUTICA'
+  | 'TERAPIA_DIRECTA'
+  | 'pre-consulta'
+  | 'post-consulta'
+  | 'no';
+
+export type TriageStatus = 'en_espera' | 'en_evaluacion' | 'atendido';
 
 export interface CustomClinicalField {
   id: string;
@@ -23,11 +32,15 @@ export interface Patient {
   fechaIngreso: string;
   dniApoderado?: string | null;
   nombreApoderado?: string | null;
-  tieneConsulta: ConsultationType;
+  tieneConsulta?: ConsultationType;
+  tipoConsulta?: ConsultationType;
   costoConsulta: number;
+  estadoTriage: TriageStatus;
   color: PatientColor;
   costoTerapia: number;
   paqueteActivo: number;
+  ocupacion?: string | null;
+  direccion?: string | null;
   camposClinicos?: CustomClinicalField[];
   createdAt: string;
   updatedAt: string;
