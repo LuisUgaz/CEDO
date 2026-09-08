@@ -65,4 +65,5 @@ export const PatientSchema = z.object({
   path: ['nombreApoderado']
 });
 
-export type PatientInput = z.infer<typeof PatientSchema>;
+export type PatientInput = z.input<typeof PatientSchema>;
+export type PatientValidated = z.output<typeof PatientSchema>;
