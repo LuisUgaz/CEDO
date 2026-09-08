@@ -40,11 +40,11 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
 
 ## Fase 3: Inicialización de la Aplicación Móvil (React Native + Expo)
 
-- [ ] Task: Scaffolding de la Aplicación Móvil en `apps/mobile`
-    - [ ] Escribir pruebas de configuración y smoke test del punto de entrada de la app móvil
-    - [ ] Inicializar proyecto React Native con Expo Router y TypeScript en `apps/mobile`
-    - [ ] Configurar NativeWind (Tailwind CSS para móvil) con la paleta clínica
-    - [ ] Configurar navegación por pestañas (Tabs) para Terapeutas (Turnos de Hoy, Mis Pacientes, Asistencia Rápida)
+- [x] 3ba0099 Task: Scaffolding de la Aplicación Móvil en `apps/mobile`
+    - [x] Escribir pruebas de configuración y smoke test del punto de entrada de la app móvil
+    - [x] Inicializar proyecto React Native con Expo Router y TypeScript en `apps/mobile`
+    - [x] Configurar NativeWind (Tailwind CSS para móvil) con la paleta clínica
+    - [x] Configurar navegación por pestañas (Tabs) para Terapeutas (Turnos de Hoy, Mis Pacientes, Asistencia Rápida)
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 3: Inicialización de la Aplicación Móvil (React Native + Expo)' (Protocol in workflow.md)
 
