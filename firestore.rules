@@ -1,0 +1,94 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Funciones de utilidad y control de acceso basado en roles (RBAC)
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function getUserRole() {
+      return request.auth.token.role;
+    }
+
+    function hasRole(role) {
+      return isAuthenticated() && getUserRole() == role;
+    }
+
+    function isAdmin() {
+      return hasRole('admin');
+    }
+
+    function isRecepcion() {
+      return hasRole('recepcion');
+    }
+
+    function isTerapeuta() {
+      return hasRole('terapeuta');
+    }
+
+    function isMedico() {
+      return hasRole('medico');
+    }
+
+    function isClinicalStaff() {
+      return isAuthenticated() && (isAdmin() || isRecepcion() || isTerapeuta() || isMedico());
+    }
+
+    // Colección: Pacientes
+    match /pacientes/{pacienteId} {
+      // Todo el personal clínico puede leer fichas de pacientes
+      allow read: if isClinicalStaff();
+      // Admin y Recepción pueden registrar y editar datos de pacientes
+      allow create, update: if isAdmin() || isRecepcion() || isMedico();
+      allow delete: if isAdmin();
+
+      // Subcolección: Paquetes y sesiones de tratamiento
+      match /paquetes/{paqueteId} {
+        allow read: if isClinicalStaff();
+        allow create, update: if isAdmin() || isRecepcion() || isTerapeuta();
+        allow delete: if isAdmin();
+      }
+    }
+
+    // Colección: Citas y Agenda Semanal (particionada por semanaId)
+    match /citas_agenda/{semanaId} {
+      allow read: if isClinicalStaff();
+      allow create, update: if isAdmin() || isRecepcion() || isTerapeuta();
+      allow delete: if isAdmin();
+
+      match /citas/{citaId} {
+        allow read: if isClinicalStaff();
+        allow write: if isAdmin() || isRecepcion() || isTerapeuta();
+      }
+    }
+
+    // Colección: Transacciones de Caja (pagos, boletas, abonos)
+    match /transacciones/{transaccionId} {
+      // Recepción y Admin pueden leer y registrar pagos
+      allow read: if isAdmin() || isRecepcion();
+      allow create: if isAdmin() || isRecepcion();
+      // Las transacciones financieras son inmutables (no se pueden editar ni borrar salvo por admin)
+      allow update, delete: if isAdmin();
+    }
+
+    // Colección: Inventario Clínico
+    match /inventario/{itemId} {
+      allow read: if isClinicalStaff();
+      allow write: if isAdmin() || isRecepcion();
+    }
+
+    // Colección: Auditorías de los 4 Sábados
+    match /auditorias_inventario/{auditoriaId} {
+      allow read: if isClinicalStaff();
+      allow write: if isAdmin() || isTerapeuta();
+    }
+
+    // Colección: Usuarios del sistema (perfiles y roles)
+    match /usuarios/{userId} {
+      allow read: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow write: if isAdmin();
+    }
+  }
+}
