@@ -1,0 +1,8 @@
+{
+  "track_id": "base_setup_20260907",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-09-07T20:43:00Z",
+  "updated_at": "2026-09-07T20:43:00Z",
+  "description": "Setup del Workspace Multi-plataforma, Tipos Compartidos y Autenticación con Firebase RBAC"
+}
