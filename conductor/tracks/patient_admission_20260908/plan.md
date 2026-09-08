@@ -22,7 +22,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar `FormularioAdmision.tsx` con campos de paciente, sección reactiva de apoderado y selector de tipo de consulta
     - [x] Integrar feedback de validación Zod en tiempo real y paleta clínica institucional
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Admisión con Regla Reactiva de Minoridad' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Admisión con Regla Reactiva de Minoridad' (Protocol in workflow.md)
 
 ---
 
