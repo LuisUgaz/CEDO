@@ -4,7 +4,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ---
 
-## Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones
+## Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones [checkpoint: 36b7871]
 
 - [x] Task: Esquemas Zod y Tipos de Historia Clínica en `@cedo/shared` e2e4668
     - [x] Escribir pruebas unitarias en `clinical-history.schema.test.ts` para validación de historia clínica y campos dinámicos
@@ -16,7 +16,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar métodos `guardarHistoriaClinica`, `obtenerHistoriaClinicaPorPaciente`, `suscribirHistoriaClinica` y `finalizarEvaluacionMedica`
     - [x] Actualizar reglas de seguridad en `firestore.rules` para la colección `historias_clinicas`
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Historia Clínica y Servicio Firestore de Evaluaciones' (Protocol in workflow.md) 36b7871
 
 ---
 
