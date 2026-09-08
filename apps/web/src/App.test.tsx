@@ -17,4 +17,16 @@ describe('App Component', () => {
     expect(screen.getAllByText('Turnos de Hoy').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByRole('button', { name: /Mis Pacientes/i })).toBeDefined();
   });
+
+  it('debe navegar al módulo de Registro y Admisión de Pacientes y renderizar el formulario y triage', () => {
+    render(<App />);
+
+    const btnRegistro = screen.getByText('Registro de Paciente');
+    fireEvent.click(btnRegistro);
+
+    expect(screen.getAllByText('Registro y Admisión de Pacientes').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByRole('button', { name: /Nuevo Registro/i })).toBeDefined();
+    expect(screen.getByRole('button', { name: /Fichas en Espera/i })).toBeDefined();
+    expect(screen.getByLabelText(/Nombre Completo/i)).toBeDefined();
+  });
 });

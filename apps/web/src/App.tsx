@@ -3,7 +3,6 @@ import { Layout } from './components/layout/Layout';
 import { ModuloId } from './components/layout/Sidebar';
 import {
   CalendarDays,
-  UserPlus,
   FileText,
   ListChecks,
   Boxes,
@@ -12,6 +11,7 @@ import {
 } from 'lucide-react';
 
 import { VistaTerapeuta } from './components/terapia/VistaTerapeuta';
+import ModuloAdmision from './components/admision/ModuloAdmision';
 
 const TITULOS_MODULOS: Record<ModuloId, string> = {
   agenda: 'Horario y Agenda Semanal',
@@ -33,13 +33,14 @@ export const App: React.FC = () => {
       onCambiarModulo={setModuloActivo}
       tituloModulo={TITULOS_MODULOS[moduloActivo]}
     >
-      {moduloActivo === 'terapias' ? (
+      {moduloActivo === 'registro' ? (
+        <ModuloAdmision />
+      ) : moduloActivo === 'terapias' ? (
         <VistaTerapeuta />
       ) : (
         <div className="bg-white rounded-xl shadow-xs border border-slate-200 p-6 flex-1 flex flex-col justify-center items-center text-center">
           <div className="p-3 bg-emerald-50 text-emerald-600 rounded-full mb-3">
             {moduloActivo === 'agenda' && <CalendarDays className="w-8 h-8" />}
-            {moduloActivo === 'registro' && <UserPlus className="w-8 h-8" />}
             {moduloActivo === 'historias' && <FileText className="w-8 h-8" />}
             {moduloActivo === 'asistencia' && <ListChecks className="w-8 h-8" />}
             {moduloActivo === 'inventario' && <Boxes className="w-8 h-8" />}
