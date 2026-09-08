@@ -53,12 +53,12 @@ Este plan detalla las tareas secuenciales para inicializar la arquitectura monor
 
 ## Fase 4: Configuración Firebase Modular y Autenticación con Roles (RBAC)
 
-- [ ] Task: Configuración Centralizada de Firebase SDK Modular v10
-    - [ ] Escribir pruebas unitarias con mocks para el servicio de inicialización de Firebase
-    - [ ] Implementar módulo de inicialización de Firebase con persistencia offline habilitada (IndexedDB)
-    - [ ] Crear archivo `firestore.rules` con estructura básica de seguridad basada en tokens y roles
+- [x] 46cc180 Task: Configuración Centralizada de Firebase SDK Modular v10
+    - [x] Escribir pruebas unitarias con mocks para el servicio de inicialización de Firebase
+    - [x] Implementar módulo de inicialización de Firebase con persistencia offline habilitada (IndexedDB)
+    - [x] Crear archivo `firestore.rules` con estructura básica de seguridad basada en tokens y roles
 
-- [ ] Task: Sistema de Autenticación y Guards de Navegación por Roles
+- [~] Task: Sistema de Autenticación y Guards de Navegación por Roles
     - [ ] Escribir pruebas unitarias para `AuthContext`, hook `useAuth` y protección de rutas
     - [ ] Implementar `AuthContext` con soporte de login, logout y extracción de Custom Claims (`role`)
     - [ ] Implementar componente de formulario de inicio de sesión estilizado para Web
