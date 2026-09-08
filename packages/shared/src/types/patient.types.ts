@@ -17,11 +17,7 @@ export type ConsultationType =
 
 export type TriageStatus = 'en_espera' | 'en_evaluacion' | 'atendido';
 
-export interface CustomClinicalField {
-  id: string;
-  nombre: string;
-  valor: string;
-}
+import type { CustomClinicalField } from './clinical-history.types';
 
 export interface Patient {
   id: string;
