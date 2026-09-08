@@ -34,4 +34,4 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar vista unificada `ModuloAdmision.tsx` con pestañas para "Nuevo Registro" y "Fichas en Espera"
     - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Registro de Paciente"
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 3: Cola de Triage en Recepción e Integración en App Web' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 3: Cola de Triage en Recepción e Integración en App Web' (Protocol in workflow.md)

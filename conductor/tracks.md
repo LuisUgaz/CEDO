@@ -12,7 +12,8 @@ This file tracks all major tracks for the project. Each track corresponds to a f
 ---
 
 ### Fase de Gestión Clínica:
-- [ ] **Track 2: Admisión, Registro y Triage de Pacientes con Regla de Minoridad**
+- [x] **Track 2: Admisión, Registro y Triage de Pacientes con Regla de Minoridad**
+  *Link: [./tracks/patient_admission_20260908/](./tracks/patient_admission_20260908/)*
   *Módulo Asociado: [user-stories.md#módulo-2-admisión-registro-y-triage-de-pacientes](./user-stories.md#módulo-2-admisión-registro-y-triage-de-pacientes)*
 
 - [ ] **Track 3: Historia Clínica y Evaluación Médica Dinámica (Formato A4 Vertical)**
