@@ -28,10 +28,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 3: Cola de Triage en Recepción e Integración en App Web
 
-- [ ] Task: Tablero de Pacientes en Espera e Integración con Módulo de Registro
-    - [ ] Escribir pruebas unitarias para `ColaTriage.tsx` y `ModuloAdmision.tsx`
-    - [ ] Implementar componente `ColaTriage.tsx` con tarjetas de pacientes, badge de consulta, hora de ingreso y acciones de derivación
-    - [ ] Implementar vista unificada `ModuloAdmision.tsx` con pestañas para "Nuevo Registro" y "Fichas en Espera"
-    - [ ] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Registro de Paciente"
+- [x] Task: Tablero de Pacientes en Espera e Integración con Módulo de Registro 1662afe
+    - [x] Escribir pruebas unitarias para `ColaTriage.tsx` y `ModuloAdmision.tsx`
+    - [x] Implementar componente `ColaTriage.tsx` con tarjetas de pacientes, badge de consulta, hora de ingreso y acciones de derivación
+    - [x] Implementar vista unificada `ModuloAdmision.tsx` con pestañas para "Nuevo Registro" y "Fichas en Espera"
+    - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Registro de Paciente"
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 3: Cola de Triage en Recepción e Integración en App Web' (Protocol in workflow.md)
