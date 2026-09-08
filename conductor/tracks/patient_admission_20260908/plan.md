@@ -17,10 +17,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 2: Formulario de Admisión con Regla Reactiva de Minoridad
 
-- [ ] Task: Componente Formulario de Admisión con Regla de Minoridad
-    - [ ] Escribir pruebas unitarias para `FormularioAdmision.tsx` (cálculo de minoridad, bloqueo de botón por falta de DNI de apoderado, costo de consulta)
-    - [ ] Implementar `FormularioAdmision.tsx` con campos de paciente, sección reactiva de apoderado y selector de tipo de consulta
-    - [ ] Integrar feedback de validación Zod en tiempo real y paleta clínica institucional
+- [x] Task: Componente Formulario de Admisión con Regla de Minoridad 3b3f4c6
+    - [x] Escribir pruebas unitarias para `FormularioAdmision.tsx` (cálculo de minoridad, bloqueo de botón por falta de DNI de apoderado, costo de consulta)
+    - [x] Implementar `FormularioAdmision.tsx` con campos de paciente, sección reactiva de apoderado y selector de tipo de consulta
+    - [x] Integrar feedback de validación Zod en tiempo real y paleta clínica institucional
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 2: Formulario de Admisión con Regla Reactiva de Minoridad' (Protocol in workflow.md)
 
