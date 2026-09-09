@@ -13,6 +13,7 @@ import {
 import ModuloAdmision from './components/admision/ModuloAdmision';
 import { ModuloHistoriaClinica } from './components/historia/ModuloHistoriaClinica';
 import { ModuloTarjeton } from './components/terapia/ModuloTarjeton';
+import ModuloAgenda from './components/agenda/ModuloAgenda';
 import type { Patient } from '@cedo/shared';
 
 const TITULOS_MODULOS: Record<ModuloId, string> = {
@@ -41,7 +42,9 @@ export const App: React.FC = () => {
       onCambiarModulo={setModuloActivo}
       tituloModulo={TITULOS_MODULOS[moduloActivo]}
     >
-      {moduloActivo === 'registro' ? (
+      {moduloActivo === 'agenda' ? (
+        <ModuloAgenda />
+      ) : moduloActivo === 'registro' ? (
         <ModuloAdmision onDerivarAEvaluacion={handleDerivarAEvaluacion} />
       ) : moduloActivo === 'historias' ? (
         <ModuloHistoriaClinica pacienteInicial={pacienteEnEvaluacion} />

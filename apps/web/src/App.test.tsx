@@ -8,6 +8,8 @@ describe('App Component', () => {
 
     expect(screen.getAllByText('CEDO-REHAB').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('Horario y Agenda Semanal').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText('Magnetoterapia')).toBeDefined();
+    expect(screen.getByText('Copiar a Semana Siguiente')).toBeDefined();
 
     // Navegar a Terapias
     const btnTerapias = screen.getByText('Ficha de Terapias (A6)');
