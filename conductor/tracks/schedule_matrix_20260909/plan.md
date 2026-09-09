@@ -40,9 +40,9 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
     - [x] Escribir pruebas unitarias para `MatrizAgenda.tsx` (estructura L-S, franjas horarias, alternancia de feriados y activación de modal)
     - [x] Implementar `MatrizAgenda.tsx` con renderizado matricial de alto rendimiento y contraste visual
 
-- [ ] Task: Módulo Unificado `ModuloAgenda.tsx`, Acción "Copiar Semana Siguiente" e Integración en `App.tsx`
-    - [ ] Escribir pruebas unitarias para `ModuloAgenda.tsx` y su integración en `App.tsx`
-    - [ ] Implementar vista unificada `ModuloAgenda.tsx` con reactividad en tiempo real y duplicación de semanas hacia la siguiente
-    - [ ] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Horario y Agenda Semanal"
+- [x] Task: Módulo Unificado `ModuloAgenda.tsx`, Acción "Copiar Semana Siguiente" e Integración en `App.tsx` (dcd4451)
+    - [x] Escribir pruebas unitarias para `ModuloAgenda.tsx` y su integración en `App.tsx`
+    - [x] Implementar vista unificada `ModuloAgenda.tsx` con reactividad en tiempo real y duplicación de semanas hacia la siguiente
+    - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Horario y Agenda Semanal"
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App' (Protocol in workflow.md)
