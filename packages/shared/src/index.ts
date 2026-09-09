@@ -12,3 +12,4 @@ export * from './schemas/patient.schema';
 export * from './schemas/therapy.schema';
 export * from './schemas/finance.schema';
 export * from './schemas/clinical-history.schema';
+export * from './schemas/schedule.schema';
