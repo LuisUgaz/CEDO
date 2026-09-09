@@ -20,7 +20,7 @@ This file tracks all major tracks for the project. Each track corresponds to a f
   *Link: [./tracks/medical_history_20260908/](./tracks/medical_history_20260908/)*
   *Módulo Asociado: [user-stories.md#módulo-3-historia-clínica-y-evaluación-médica-a4-vertical](./user-stories.md#módulo-3-historia-clínica-y-evaluación-médica-a4-vertical)*
 
-- [~] **Track 4: Prescripción Terapéutica y Tarjetón de Tratamiento (Formato A6 / A5 / A4)**
+- [x] **Track 4: Prescripción Terapéutica y Tarjetón de Tratamiento (Formato A6 / A5 / A4)**
   *Link: [./tracks/therapy_prescription_20260908/](./tracks/therapy_prescription_20260908/)*
   *Módulo Asociado: [user-stories.md#módulo-4-prescripción-terapéutica-y-tarjetón-de-tratamiento-a6--a5--a4](./user-stories.md#módulo-4-prescripción-terapéutica-y-tarjetón-de-tratamiento-a6--a5--a4)*
 
