@@ -28,6 +28,7 @@ This file tracks all major tracks for the project. Each track corresponds to a f
 
 ### Fase Operativa y Asistencial:
 - [ ] **Track 5: Matriz de Agenda y Turnos Semanales Multi-Terapeuta con Código de Colores**
+  *Link: [./tracks/schedule_matrix_20260909/](./tracks/schedule_matrix_20260909/)*
   *Módulo Asociado: [user-stories.md#módulo-5-matriz-de-agenda-y-turnos-semanales](./user-stories.md#módulo-5-matriz-de-agenda-y-turnos-semanales)*
 
 - [ ] **Track 6: Control de Asistencia, Paquetes de Sesiones y Cobranza de Boletas**
