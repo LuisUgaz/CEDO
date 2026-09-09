@@ -6,7 +6,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 1: Esquemas de Prescripción y Servicio Firestore de Tarjetones
 
-- [ ] Task: Esquemas Zod y Tipos de Tarjetón de Tratamiento en `@cedo/shared`
+- [~] Task: Esquemas Zod y Tipos de Tarjetón de Tratamiento en `@cedo/shared`
     - [ ] Escribir pruebas unitarias en `therapy.schema.test.ts` para validación de fichas de tratamiento, catálogo de agentes y formatos A6/A5/A4
     - [ ] Perfeccionar tipos TypeScript y esquemas Zod en `packages/shared/src/schemas/therapy.schema.ts` permitiendo inputs opcionales y valores por defecto
     - [ ] Exportar y verificar compilación de `@cedo/shared`
