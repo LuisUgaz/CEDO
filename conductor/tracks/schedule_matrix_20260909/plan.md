@@ -36,9 +36,9 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ## Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App
 
-- [ ] Task: Componente de Grilla Semanal (`MatrizAgenda.tsx`) con Días Feriados/Laborales
-    - [ ] Escribir pruebas unitarias para `MatrizAgenda.tsx` (estructura L-S, franjas horarias, alternancia de feriados y activación de modal)
-    - [ ] Implementar `MatrizAgenda.tsx` con renderizado matricial de alto rendimiento y contraste visual
+- [x] Task: Componente de Grilla Semanal (`MatrizAgenda.tsx`) con Días Feriados/Laborales (548e42d)
+    - [x] Escribir pruebas unitarias para `MatrizAgenda.tsx` (estructura L-S, franjas horarias, alternancia de feriados y activación de modal)
+    - [x] Implementar `MatrizAgenda.tsx` con renderizado matricial de alto rendimiento y contraste visual
 
 - [ ] Task: Módulo Unificado `ModuloAgenda.tsx`, Acción "Copiar Semana Siguiente" e Integración en `App.tsx`
     - [ ] Escribir pruebas unitarias para `ModuloAgenda.tsx` y su integración en `App.tsx`
