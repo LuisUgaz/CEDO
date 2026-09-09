@@ -61,6 +61,15 @@ service cloud.firestore {
       allow delete: if isAdmin();
     }
 
+    // Colección: Prescripciones Fisioterapéuticas y Tarjetones de Tratamiento (A6 / A5 / A4)
+    match /tarjetones_tratamiento/{tarjetonId} {
+      // Personal clínico puede leer las fichas de tratamiento
+      allow read: if isClinicalStaff();
+      // Médicos, terapeutas y administradores pueden registrar y ajustar prescripciones
+      allow create, update: if isAdmin() || isMedico() || isTerapeuta();
+      allow delete: if isAdmin();
+    }
+
     // Colección: Citas y Agenda Semanal (particionada por semanaId)
     match /citas_agenda/{semanaId} {
       allow read: if isClinicalStaff();
