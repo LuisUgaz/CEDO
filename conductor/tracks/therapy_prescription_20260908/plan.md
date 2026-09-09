@@ -16,13 +16,13 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar métodos `guardarTarjetonTratamiento`, `obtenerTarjetonPorPaciente` y `suscribirTarjetonPorPaciente`
     - [x] Actualizar reglas de seguridad en `firestore.rules` para la colección `tarjetones_tratamiento`
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Prescripción y Servicio Firestore de Tarjetones' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Prescripción y Servicio Firestore de Tarjetones' (Protocol in workflow.md)
 
 ---
 
 ## Fase 2: Editor Interactivo de Prescripción con Checkboxes 'X' y Autoguardado Reactivo
 
-- [ ] Task: Componente de Selección de Agentes Físicos y Técnicas (`CatalogoPrescripcion.tsx`)
+- [~] Task: Componente de Selección de Agentes Físicos y Técnicas (`CatalogoPrescripcion.tsx`)
     - [ ] Escribir pruebas unitarias para `CatalogoPrescripcion.tsx` (marcado reactivo de casillas tipo "X", agrupación por categorías: Agentes Físicos, Técnicas Manuales y Cinesiterapia)
     - [ ] Implementar componente `CatalogoPrescripcion.tsx` con diseño ergonómico de alta densidad y marcado rápido con 'X' de alto contraste
 
