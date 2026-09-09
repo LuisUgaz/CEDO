@@ -37,7 +37,7 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ---
 
-## Fase 3: Formato de Impresión A4 Vertical e Integración en App Web
+## Fase 3: Formato de Impresión A4 Vertical e Integración en App Web [checkpoint: 8525bb3]
 
 - [x] Task: Plantilla de Impresión Institucional A4 Vertical (`ImpresionHistoriaA4.tsx`) 72643b2
     - [x] Escribir pruebas unitarias para la plantilla de impresión A4 institucional y membrete oficial
@@ -50,4 +50,4 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Historia Clínica General (Informe A4)"
     - [x] Vincular la acción "Evaluar" de `ColaTriage.tsx` para abrir directamente la historia clínica del paciente seleccionado
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 3: Formato de Impresión A4 Vertical e Integración en App Web' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 3: Formato de Impresión A4 Vertical e Integración en App Web' (Protocol in workflow.md) 8525bb3
