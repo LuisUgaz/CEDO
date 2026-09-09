@@ -4,7 +4,7 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ---
 
-## Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal
+## Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal [checkpoint: 0680cb0]
 
 - [x] Task: Esquemas Zod y Funciones de Utilidad de Calendario en `@cedo/shared` (231f71a)
     - [x] Escribir pruebas unitarias en `schedule.schema.test.ts` para validación de slots, estados de día, semanas completas y utilidades de rangos de fechas (2026-2035)
@@ -16,7 +16,7 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
     - [x] Implementar métodos `obtenerAgendaSemanal`, `guardarAgendaSemanal`, `actualizarSlot`, `marcarEstadoDia`, `copiarSemanaSiguiente` y `suscribirAgendaSemanal`
     - [x] Verificar compatibilidad con reglas de seguridad en `firestore.rules`
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal' (Protocol in workflow.md)
 
 ---
 
