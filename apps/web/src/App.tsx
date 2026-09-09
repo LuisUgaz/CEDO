@@ -10,9 +10,9 @@ import {
   Wallet
 } from 'lucide-react';
 
-import { VistaTerapeuta } from './components/terapia/VistaTerapeuta';
 import ModuloAdmision from './components/admision/ModuloAdmision';
 import { ModuloHistoriaClinica } from './components/historia/ModuloHistoriaClinica';
+import { ModuloTarjeton } from './components/terapia/ModuloTarjeton';
 import type { Patient } from '@cedo/shared';
 
 const TITULOS_MODULOS: Record<ModuloId, string> = {
@@ -46,7 +46,7 @@ export const App: React.FC = () => {
       ) : moduloActivo === 'historias' ? (
         <ModuloHistoriaClinica pacienteInicial={pacienteEnEvaluacion} />
       ) : moduloActivo === 'terapias' ? (
-        <VistaTerapeuta />
+        <ModuloTarjeton pacienteInicial={pacienteEnEvaluacion} />
       ) : (
         <div className="bg-white rounded-xl shadow-xs border border-slate-200 p-6 flex-1 flex flex-col justify-center items-center text-center">
           <div className="p-3 bg-emerald-50 text-emerald-600 rounded-full mb-3">

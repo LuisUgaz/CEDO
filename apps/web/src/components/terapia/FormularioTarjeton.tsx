@@ -70,6 +70,21 @@ export const FormularioTarjeton: React.FC<FormularioTarjetonProps> = ({
   const esMontajeInicial = useRef(true);
   const timerDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Sincronizar estado cuando se carga o actualiza tarjetonInicial
+  useEffect(() => {
+    if (tarjetonInicial) {
+      setTarjetonId(tarjetonInicial.id);
+      setNumeroPaquete(tarjetonInicial.numeroPaquete || paciente.paqueteActivo || 1);
+      setFecha(tarjetonInicial.fecha || new Date().toISOString().split('T')[0]);
+      setTipoAtencion(tarjetonInicial.tipoAtencion || 'PARTICULAR');
+      setDiagnostico(tarjetonInicial.diagnostico || '');
+      setSesionNumero(tarjetonInicial.sesionNumero || '1');
+      setTecnicasSeleccionadas((tarjetonInicial.tecnicasSeleccionadas as string[]) || []);
+      setIndicacionesAdicionales(tarjetonInicial.indicacionesAdicionales || []);
+      setFormatoImpresion(tarjetonInicial.formatoImpresion || 'a6');
+    }
+  }, [tarjetonInicial, paciente.paqueteActivo]);
+
   // Alternar selección de una técnica o agente en el catálogo
   const handleToggleTecnica = useCallback((id: string) => {
     setTecnicasSeleccionadas((prev) =>

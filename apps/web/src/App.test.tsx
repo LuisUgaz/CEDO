@@ -13,7 +13,12 @@ describe('App Component', () => {
     const btnTerapias = screen.getByText('Ficha de Terapias (A6)');
     fireEvent.click(btnTerapias);
 
-    // Debe mostrar la vista de terapeuta y sus pestañas
+    // Debe mostrar el módulo de Prescripción Terapéutica y Tarjetón
+    expect(screen.getAllByText(/Prescripción Terapéutica y Tarjetón/i).length).toBeGreaterThanOrEqual(1);
+
+    // Debe permitir alternar a la subvista de sala de terapia (Turnos de Hoy)
+    const btnTurnos = screen.getByRole('button', { name: /Turnos de Hoy \(Sala\)/i });
+    fireEvent.click(btnTurnos);
     expect(screen.getAllByText('Turnos de Hoy').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByRole('button', { name: /Mis Pacientes/i })).toBeDefined();
   });
