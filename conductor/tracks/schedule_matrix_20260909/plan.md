@@ -11,10 +11,10 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
     - [x] Implementar esquemas Zod en `packages/shared/src/schemas/schedule.schema.ts` y funciones de generación de plantilla semanal
     - [x] Exportar y verificar compilación de `@cedo/shared`
 
-- [ ] Task: Servicio Firestore `agenda.service.ts` y Operaciones de Particionamiento
-    - [ ] Escribir pruebas unitarias con mocks para el servicio en `agenda.service.test.ts`
-    - [ ] Implementar métodos `obtenerAgendaSemanal`, `guardarAgendaSemanal`, `actualizarSlot`, `marcarEstadoDia`, `copiarSemanaSiguiente` y `suscribirAgendaSemanal`
-    - [ ] Verificar compatibilidad con reglas de seguridad en `firestore.rules`
+- [x] Task: Servicio Firestore `agenda.service.ts` y Operaciones de Particionamiento (45dbf23)
+    - [x] Escribir pruebas unitarias con mocks para el servicio en `agenda.service.test.ts`
+    - [x] Implementar métodos `obtenerAgendaSemanal`, `guardarAgendaSemanal`, `actualizarSlot`, `marcarEstadoDia`, `copiarSemanaSiguiente` y `suscribirAgendaSemanal`
+    - [x] Verificar compatibilidad con reglas de seguridad en `firestore.rules`
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal' (Protocol in workflow.md)
 
