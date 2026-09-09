@@ -30,13 +30,13 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Escribir pruebas unitarias para `FormularioTarjeton.tsx` (distinción Asegurado/Particular, número de paquete, indicaciones médicas expandibles, selector de formato y debounce de 500ms)
     - [x] Implementar `FormularioTarjeton.tsx` integrando el catálogo, renglones dinámicos de indicaciones y persistencia reactiva en Firestore
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 2: Editor Interactivo de Prescripción con Checkboxes 'X' y Autoguardado Reactivo' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 2: Editor Interactivo de Prescripción con Checkboxes 'X' y Autoguardado Reactivo' (Protocol in workflow.md)
 
 ---
 
 ## Fase 3: Plantilla de Impresión Multi-Formato (A6 / A5 / A4) e Integración en App Web
 
-- [ ] Task: Plantilla de Impresión Institucional (`ImpresionTarjeton.tsx`)
+- [~] Task: Plantilla de Impresión Institucional (`ImpresionTarjeton.tsx`)
     - [ ] Escribir pruebas unitarias para el renderizado del tarjetón físico en formatos A6 (105 × 148 mm), A5 y A4
     - [ ] Implementar `ImpresionTarjeton.tsx` con membrete institucional oficial de CEDO-REHAB EIRL, distintivo Asegurado/Particular, grilla de casillas [ X ] nítidas, renglones de indicaciones y cuadrícula de control de asistencia de sesiones (1 a 10/12)
     - [ ] Configurar clases de impresión `@media print` (`.print-a6-tarjeton`, etc.) y ocultamiento de controles
