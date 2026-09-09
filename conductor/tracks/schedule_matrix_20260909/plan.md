@@ -22,9 +22,9 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ## Fase 2: Componentes de Visualización Matricial, Códigos de Colores y Gestión de Slots
 
-- [ ] Task: Selector de Período, Leyenda de Colores y Celda Interactiva (`SelectorPeriodoSemana.tsx`, `LeyendaColores.tsx`, `CeldaTurno.tsx`)
-    - [ ] Escribir pruebas unitarias para componentes de navegación temporal, leyenda de 6 especialidades y renderizado de celdas con colores temáticos
-    - [ ] Implementar `SelectorPeriodoSemana.tsx`, `LeyendaColores.tsx` y `CeldaTurno.tsx` con estilos Tailwind accesibles y badges de asistencia
+- [x] Task: Selector de Período, Leyenda de Colores y Celda Interactiva (`SelectorPeriodoSemana.tsx`, `LeyendaColores.tsx`, `CeldaTurno.tsx`) (9403e37)
+    - [x] Escribir pruebas unitarias para componentes de navegación temporal, leyenda de 6 especialidades y renderizado de celdas con colores temáticos
+    - [x] Implementar `SelectorPeriodoSemana.tsx`, `LeyendaColores.tsx` y `CeldaTurno.tsx` con estilos Tailwind accesibles y badges de asistencia
 
 - [ ] Task: Modal de Edición de Turno (`ModalTurno.tsx`) con Búsqueda de Paciente y Asistencia
     - [ ] Escribir pruebas unitarias para `ModalTurno.tsx` (asignación de paciente, selección de especialidad, notas clínicas, toggle de asistencia y desocupación de slot)
