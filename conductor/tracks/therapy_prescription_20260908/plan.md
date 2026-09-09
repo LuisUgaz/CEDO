@@ -41,9 +41,9 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Implementar `ImpresionTarjeton.tsx` con membrete institucional oficial de CEDO-REHAB EIRL, distintivo Asegurado/Particular, grilla de casillas [ X ] nítidas, renglones de indicaciones y cuadrícula de control de asistencia de sesiones (1 a 10/12)
     - [x] Configurar clases de impresión `@media print` (`.print-a6-tarjeton`, etc.) y ocultamiento de controles
 
-- [~] Task: Módulo Unificado `ModuloTarjeton.tsx` e Integración en `App.tsx`
-    - [ ] Escribir pruebas unitarias para `ModuloTarjeton.tsx` y su integración en `App.tsx`
-    - [ ] Implementar vista unificada `ModuloTarjeton.tsx` con selector de pacientes y alternancia a vista de impresión
-    - [ ] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Ficha de Tratamiento (Tarjetón A6)"
+- [x] Task: Módulo Unificado `ModuloTarjeton.tsx` e Integración en `App.tsx` (cb17c8b)
+    - [x] Escribir pruebas unitarias para `ModuloTarjeton.tsx` y su integración en `App.tsx`
+    - [x] Implementar vista unificada `ModuloTarjeton.tsx` con selector de pacientes y alternancia a vista de impresión
+    - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Ficha de Tratamiento (Tarjetón A6)"
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 3: Plantilla de Impresión Multi-Formato (A6 / A5 / A4) e Integración en App Web' (Protocol in workflow.md)
