@@ -11,10 +11,10 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Perfeccionar tipos TypeScript y esquemas Zod en `packages/shared/src/schemas/therapy.schema.ts` permitiendo inputs opcionales y valores por defecto
     - [x] Exportar y verificar compilación de `@cedo/shared`
 
-- [~] Task: Servicio Firestore `tarjeton.service.ts` y Reglas de Seguridad
-    - [ ] Escribir pruebas unitarias con mocks para el servicio en `tarjeton.service.test.ts`
-    - [ ] Implementar métodos `guardarTarjetonTratamiento`, `obtenerTarjetonPorPaciente` y `suscribirTarjetonPorPaciente`
-    - [ ] Actualizar reglas de seguridad en `firestore.rules` para la colección `tarjetones_tratamiento`
+- [x] Task: Servicio Firestore `tarjeton.service.ts` y Reglas de Seguridad (4a074aa)
+    - [x] Escribir pruebas unitarias con mocks para el servicio en `tarjeton.service.test.ts`
+    - [x] Implementar métodos `guardarTarjetonTratamiento`, `obtenerTarjetonPorPaciente` y `suscribirTarjetonPorPaciente`
+    - [x] Actualizar reglas de seguridad en `firestore.rules` para la colección `tarjetones_tratamiento`
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 1: Esquemas de Prescripción y Servicio Firestore de Tarjetones' (Protocol in workflow.md)
 
