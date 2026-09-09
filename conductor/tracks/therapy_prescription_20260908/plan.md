@@ -36,12 +36,12 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
 
 ## Fase 3: Plantilla de Impresión Multi-Formato (A6 / A5 / A4) e Integración en App Web
 
-- [~] Task: Plantilla de Impresión Institucional (`ImpresionTarjeton.tsx`)
-    - [ ] Escribir pruebas unitarias para el renderizado del tarjetón físico en formatos A6 (105 × 148 mm), A5 y A4
-    - [ ] Implementar `ImpresionTarjeton.tsx` con membrete institucional oficial de CEDO-REHAB EIRL, distintivo Asegurado/Particular, grilla de casillas [ X ] nítidas, renglones de indicaciones y cuadrícula de control de asistencia de sesiones (1 a 10/12)
-    - [ ] Configurar clases de impresión `@media print` (`.print-a6-tarjeton`, etc.) y ocultamiento de controles
+- [x] Task: Plantilla de Impresión Institucional (`ImpresionTarjeton.tsx`) (d33eb22)
+    - [x] Escribir pruebas unitarias para el renderizado del tarjetón físico en formatos A6 (105 × 148 mm), A5 y A4
+    - [x] Implementar `ImpresionTarjeton.tsx` con membrete institucional oficial de CEDO-REHAB EIRL, distintivo Asegurado/Particular, grilla de casillas [ X ] nítidas, renglones de indicaciones y cuadrícula de control de asistencia de sesiones (1 a 10/12)
+    - [x] Configurar clases de impresión `@media print` (`.print-a6-tarjeton`, etc.) y ocultamiento de controles
 
-- [ ] Task: Módulo Unificado `ModuloTarjeton.tsx` e Integración en `App.tsx`
+- [~] Task: Módulo Unificado `ModuloTarjeton.tsx` e Integración en `App.tsx`
     - [ ] Escribir pruebas unitarias para `ModuloTarjeton.tsx` y su integración en `App.tsx`
     - [ ] Implementar vista unificada `ModuloTarjeton.tsx` con selector de pacientes y alternancia a vista de impresión
     - [ ] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Ficha de Tratamiento (Tarjetón A6)"
