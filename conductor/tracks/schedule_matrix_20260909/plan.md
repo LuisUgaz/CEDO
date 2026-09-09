@@ -34,7 +34,7 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ---
 
-## Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App
+## Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App [checkpoint: 647107f]
 
 - [x] Task: Componente de Grilla Semanal (`MatrizAgenda.tsx`) con Días Feriados/Laborales (548e42d)
     - [x] Escribir pruebas unitarias para `MatrizAgenda.tsx` (estructura L-S, franjas horarias, alternancia de feriados y activación de modal)
@@ -45,4 +45,4 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
     - [x] Implementar vista unificada `ModuloAgenda.tsx` con reactividad en tiempo real y duplicación de semanas hacia la siguiente
     - [x] Conectar el módulo en `apps/web/src/App.tsx` bajo la opción "Horario y Agenda Semanal"
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 3: Matriz Semanal Completa, Productividad (Copiar Semana) e Integración en App' (Protocol in workflow.md)
