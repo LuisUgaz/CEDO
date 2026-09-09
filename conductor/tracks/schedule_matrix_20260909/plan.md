@@ -20,7 +20,7 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ---
 
-## Fase 2: Componentes de Visualización Matricial, Códigos de Colores y Gestión de Slots
+## Fase 2: Componentes de Visualización Matricial, Códigos de Colores y Gestión de Slots [checkpoint: e441ab4]
 
 - [x] Task: Selector de Período, Leyenda de Colores y Celda Interactiva (`SelectorPeriodoSemana.tsx`, `LeyendaColores.tsx`, `CeldaTurno.tsx`) (9403e37)
     - [x] Escribir pruebas unitarias para componentes de navegación temporal, leyenda de 6 especialidades y renderizado de celdas con colores temáticos
@@ -30,7 +30,7 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
     - [x] Escribir pruebas unitarias para `ModalTurno.tsx` (asignación de paciente, selección de especialidad, notas clínicas, toggle de asistencia y desocupación de slot)
     - [x] Implementar componente `ModalTurno.tsx` ergonómico y reactivo
 
-- [ ] Task: Conductor - User Manual Verification 'Fase 2: Componentes de Visualización Matricial, Códigos de Colores y Gestión de Slots' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Fase 2: Componentes de Visualización Matricial, Códigos de Colores y Gestión de Slots' (Protocol in workflow.md)
 
 ---
 
