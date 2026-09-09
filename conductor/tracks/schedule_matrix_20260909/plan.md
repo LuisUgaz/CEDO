@@ -6,10 +6,10 @@ Este plan detalla las tareas secuenciales siguiendo desarrollo guiado por prueba
 
 ## Fase 1: Esquemas de Validación Zod, Utilidades de Calendario y Servicio Firestore de Agenda Semanal
 
-- [ ] Task: Esquemas Zod y Funciones de Utilidad de Calendario en `@cedo/shared`
-    - [ ] Escribir pruebas unitarias en `schedule.schema.test.ts` para validación de slots, estados de día, semanas completas y utilidades de rangos de fechas (2026-2035)
-    - [ ] Implementar esquemas Zod en `packages/shared/src/schemas/schedule.schema.ts` y funciones de generación de plantilla semanal
-    - [ ] Exportar y verificar compilación de `@cedo/shared`
+- [x] Task: Esquemas Zod y Funciones de Utilidad de Calendario en `@cedo/shared` (231f71a)
+    - [x] Escribir pruebas unitarias en `schedule.schema.test.ts` para validación de slots, estados de día, semanas completas y utilidades de rangos de fechas (2026-2035)
+    - [x] Implementar esquemas Zod en `packages/shared/src/schemas/schedule.schema.ts` y funciones de generación de plantilla semanal
+    - [x] Exportar y verificar compilación de `@cedo/shared`
 
 - [ ] Task: Servicio Firestore `agenda.service.ts` y Operaciones de Particionamiento
     - [ ] Escribir pruebas unitarias con mocks para el servicio en `agenda.service.test.ts`
