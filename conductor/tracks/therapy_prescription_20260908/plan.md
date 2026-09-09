@@ -26,9 +26,9 @@ Este plan detalla las tareas secuenciales con desarrollo guiado por pruebas (TDD
     - [x] Escribir pruebas unitarias para `CatalogoPrescripcion.tsx` (marcado reactivo de casillas tipo "X", agrupación por categorías: Agentes Físicos, Técnicas Manuales y Cinesiterapia)
     - [x] Implementar componente `CatalogoPrescripcion.tsx` con diseño ergonómico de alta densidad y marcado rápido con 'X' de alto contraste
 
-- [~] Task: Formulario del Tarjetón con Autoguardado Debounce (`FormularioTarjeton.tsx`)
-    - [ ] Escribir pruebas unitarias para `FormularioTarjeton.tsx` (distinción Asegurado/Particular, número de paquete, indicaciones médicas expandibles, selector de formato y debounce de 500ms)
-    - [ ] Implementar `FormularioTarjeton.tsx` integrando el catálogo, renglones dinámicos de indicaciones y persistencia reactiva en Firestore
+- [x] Task: Formulario del Tarjetón con Autoguardado Debounce (`FormularioTarjeton.tsx`) (e41088c)
+    - [x] Escribir pruebas unitarias para `FormularioTarjeton.tsx` (distinción Asegurado/Particular, número de paquete, indicaciones médicas expandibles, selector de formato y debounce de 500ms)
+    - [x] Implementar `FormularioTarjeton.tsx` integrando el catálogo, renglones dinámicos de indicaciones y persistencia reactiva en Firestore
 
 - [ ] Task: Conductor - User Manual Verification 'Fase 2: Editor Interactivo de Prescripción con Checkboxes 'X' y Autoguardado Reactivo' (Protocol in workflow.md)
 
